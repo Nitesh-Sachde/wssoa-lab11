@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "panels": [
+    {
+      "type": "graph",
+      "title": "HTTP Requests Total",
+      "targets": [
+        {
+          "expr": "sum(http_requests_total) by (route)",
+          "legendFormat": "{{route}}",
+          "refId": "A"
+        }
+      ],
+      "id": 1
+    }
+  ],
+  "schemaVersion": 27,
+  "version": 1,
+  "title": "Backend Metrics",
+  "uid": "backend-metrics"
+}
