@@ -1,4 +1,4 @@
-# Mini CI/CD project (Lab 11)
+# Mini CI/CD project (IT644 - WSSOA Lab 11)
 
 This project is a minimal CI/CD demo that includes:
 
