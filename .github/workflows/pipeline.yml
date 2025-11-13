@@ -82,9 +82,9 @@ jobs:
 
       - name: Bring up services with docker-compose
         run: |
-          docker-compose --version
+          docker compose version
           docker compose up -d --build
           # wait a few seconds for services to start
           sleep 10
           # basic health check
-          curl -f http://localhost:4000/ || (echo "backend not responding" && exit 1)
+          curl -f http://localhost:3000/ || (echo "backend not responding" && exit 1)
